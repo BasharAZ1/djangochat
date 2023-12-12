@@ -12,15 +12,13 @@ def index(request,username):
     chatrooms = ChatRoom.objects.filter(users=user)
     return render(request,'chatapp/index.html',{'chatrooms':chatrooms})
 
-def Yara():
-    print('..')
+
 def chatroom(request,slug):
     chatroom = ChatRoom.objects.get(slug=slug)
     messages = ChatMessage.objects.filter(room=chatroom)[0:30]
     return render(request,'chatapp/room.html',{'chatroom':chatroom,'messages':messages})
 
 @csrf_exempt
-
 def test(request):
     user1 = User.objects.get(id='4')
     user2 = User.objects.get(id='3')
