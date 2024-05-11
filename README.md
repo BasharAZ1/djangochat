@@ -1,5 +1,6 @@
-markdown
-Copy code
+Here is the complete markdown documentation for the Mrsambosk Chat App that you can use directly:
+
+```markdown
 # Mrsambosk Chat App
 
 Mrsambosk is a real-time chat application built with FastAPI and React. It supports single-room chat functionality, allows users to see who is online, send messages, and delete messages using both WebSocket and HTTP protocols.
@@ -17,28 +18,26 @@ Before starting, make sure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/Mrsambosk.git
+   ```
+   git clone https://github.com/yourusername/Mrsambosk.git
+   ```
 
-css
-Copy code
 2. Navigate to the server directory of the project:
-cd Mrsambosk
+   ```
+   cd Mrsambosk
+   ```
 
-markdown
-Copy code
 3. Install the required Python dependencies:
-pip install -r requirements.txt
-
-sql
-Copy code
+   ```
+   pip install -r requirements.txt
+   ```
 
 ### Running the Server
 
 To start the FastAPI server, execute the following command:
+```
 uvicorn app:app --reload
-
-markdown
-Copy code
+```
 This will start the server on `http://127.0.0.1:8000`. The `--reload` flag allows the server to automatically reload upon any code changes.
 
 ## Project Structure
@@ -62,13 +61,13 @@ This will start the server on `http://127.0.0.1:8000`. The `--reload` flag allow
 ## Testing
 
 Run the following command to execute tests:
+```
 pytest
-
-markdown
-Copy code
+```
 
 ## Built With
 
 * [FastAPI](https://fastapi.tiangolo.com/) - The web framework used for the backend.
 * [React](https://reactjs.org/) - Frontend library used for building the user interface.
-* [Socket.IO](https://socket.io/) - Enables real-time, bidirectional and event-based comm
+* [Socket.IO](https://socket.io/) - Enables real-time, bidirectional and event-based communication.
+```
