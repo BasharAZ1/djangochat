@@ -122,7 +122,7 @@ class Media(models.Model):
 1. Clone the repository:
    ```sh
    git clone [https://github.com/your-username/django-chat.git](https://github.com/BasharAZ1/djangochat.git)
-   cd django-chat
+   cd mysite
    ```
 
 2. Create and activate a virtual environment:
